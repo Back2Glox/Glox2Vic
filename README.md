@@ -1,3 +1,2 @@
 - Hi, I’m Glox!
-- I Like Tech!
-- I Like Sonic The Hedgehog!
+
