@@ -17,9 +17,23 @@ h1 {
 }
 
 /* Paragraph styling */
-p {
+p, .poem, .notebook {
     font-size: 1.2em;
     margin: 20px 50px;
+}
+
+/* Notebook style */
+.notebook {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    background-color: #fff3e6;
+    border-left: 5px solid #ff7043;
+    padding: 15px;
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
 }
 
 /* Link styles */
@@ -32,4 +46,27 @@ a {
 /* Hover effect for links */
 a:hover {
     color: #2980b9;
+}
+
+/* Easter egg link styling */
+.secret-click {
+    color: #e74c3c;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.secret-click:hover {
+    color: #c0392b;
+}
+
+/* Easter egg hidden text styling */
+.hidden-egg {
+    color: #9b59b6;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hidden-egg:hover {
+    color: #8e44ad;
 }
