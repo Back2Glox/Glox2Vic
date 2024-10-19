@@ -1,45 +1,24 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-y: auto; /* Allow vertical scrolling */
-}
-
 body {
     background: url('fnaf_office_bg.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Press Start 2P', cursive; /* FNaF-style font */
+    font-family: 'Press Start 2P', sans-serif; /* FNaF styled font */
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Change to flex-start for better scrolling */
-    min-height: 100vh; /* Maintain full height for the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 h1 {
     font-size: 3em;
     text-shadow: 2px 2px 5px black;
-    margin-top: 20px; /* Add some top margin for spacing */
-}
-
-.fnaf-characters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
-    max-width: 800px; /* Set a maximum width to keep images aligned */
-    margin: 0 auto; /* Center the character images */
-}
-
-.fnaf-image {
-    width: 100px; /* Set a specific width for the images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px; /* Add some margin around each image */
+    margin-top: 20px; /* Add space above title */
 }
 
 nav {
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 0; /* Add padding to nav */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below nav */
 }
 
 nav a {
@@ -47,19 +26,45 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     color: #f39c12;
+    transition: color 0.3s; /* Transition effect for color change */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.fnaf-characters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    margin: 0 auto; /* Center the flex container */
+    max-width: 1200px; /* Limit max width for large screens */
+}
+
+.fnaf-image {
+    margin: 20px;
+    max-width: 300px; /* Set a max width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent stretching */
+    border: 3px solid #f39c12; /* Border around images */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 p {
-    font-size: 1.2em;
-    text-shadow: 1px 1px 3px black;
-}
-
-/* Embedding SoundCloud player */
-.soundcloud-player {
-    margin-top: 20px;
+    font-size: 1.2em; /* Slightly larger font for readability */
+    margin: 20px 0; /* Space around the paragraph */
 }
 
 footer {
-    margin-top: 30px;
-    color: lightgray;
+    margin-top: 40px; /* Space above footer */
+    padding: 10px 0; /* Padding for footer */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+audio {
+    margin-top: 20px;
+    border: none; /* Remove border around audio player */
+    border-radius: 10px; /* Rounded corners for audio player */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
