@@ -23,16 +23,18 @@ h1 {
     margin-top: 20px; /* Add some top margin for spacing */
 }
 
-.fnaf-image {
-    width: 150px; /* Set a specific width for the images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px;
-}
-
 .fnaf-characters {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    max-width: 800px; /* Set a maximum width to keep images aligned */
+    margin: 0 auto; /* Center the character images */
+}
+
+.fnaf-image {
+    width: 100px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some margin around each image */
 }
 
 nav {
