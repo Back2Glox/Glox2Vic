@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNaF Universe</title>
+    <link rel="stylesheet" href="fnaf.css">
+    <style>
+        body {
+            background: url('fnaf_office_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Press Start 2P', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px black;
+        }
+        .fnaf-image {
+            margin: 20px;
+            max-width: 300px;
+        }
+        .fnaf-characters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        audio {
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the FNaF Universe!</h1>
+
+    <!-- Navigation links to other pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shadowchronicles.html">Shadow Chronicles</a>
+        <a href="written.html">Notebook</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="fnaf-characters">
+        <img src="freddy.png" alt="Freddy Fazbear" class="fnaf-image">
+        <img src="bonnie.png" alt="Bonnie the Bunny" class="fnaf-image">
+        <img src="chica.png" alt="Chica the Chicken" class="fnaf-image">
+        <img src="foxy.png" alt="Foxy the Pirate" class="fnaf-image">
+    </div>
+
+    <p>Explore the eerie world of FNaF, where Freddy Fazbear and his crew are waiting for you!</p>
+
+    <!-- Audio Player for FNaF Songs -->
+    <audio controls autoplay>
+        <source src="FNaF_Songs.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+  </html>
