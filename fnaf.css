@@ -1,35 +1,62 @@
-/* General Styles for All Pages */
-body {
-    font-family: 'Press Start 2P', sans-serif;
-    background-color: #101010;
-    color: #ffffff;
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
 }
 
-h1, h2, h3 {
-    color: #f39c12;
+body {
+    background: url('fnaf_office_bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive; /* FNaF-style font */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change to flex-start for better scrolling */
+    min-height: 100vh; /* Maintain full height for the body */
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.fnaf-image {
+    margin: 20px;
+    max-width: 300px;
+}
+
+.fnaf-characters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav {
-    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 nav a {
-    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
     text-decoration: none;
-    margin: 0 10px;
-}
-
-nav a:hover {
     color: #f39c12;
 }
 
-/* Image Styling */
-.fnaf-image {
-    transition: transform 0.3s;
+p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px black;
 }
 
-.fnaf-image:hover {
-    transform: scale(1.05);
+/* Embedding SoundCloud player */
+.soundcloud-player {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    color: lightgray;
 }
