@@ -7,58 +7,88 @@
     <link rel="stylesheet" href="fnaf.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to the FNaF Page!</h1>
+    </header>
 
-    <h1>Welcome to the FNaF Page!</h1>
-
-    <!-- Navigation links to other pages -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="fnaf.html">FNaF</a>
         <a href="shadowchronicles.html">Shadow Chronicles</a>
         <a href="written.html">Notebook</a>
         <a href="about.html">About</a>
     </nav>
 
-    <div class="fnaf-characters">
-        <img src="freddy.png" alt="Freddy Fazbear" class="fnaf-image">
-        <img src="bonnie.png" alt="Bonnie the Bunny" class="fnaf-image">
-        <img src="chica.png" alt="Chica the Chicken" class="fnaf-image">
-        <img src="foxy.png" alt="Foxy the Pirate" class="fnaf-image">
-    </div>
-
-    <p>Explore the eerie world of FNaF, where Freddy Fazbear and his crew are waiting for you!</p>
-
-    <section class="character-descriptions">
-        <h2>Character Descriptions</h2>
-        <div class="character">
-            <h3>Freddy Fazbear</h3>
-            <p>The main mascot of Freddy Fazbear's Pizza. He is a brown bear who loves to sing. Freddy is known for his friendliness, but he can become aggressive during the night!</p>
-        </div>
-        <div class="character">
-            <h3>Bonnie the Bunny</h3>
-            <p>Bonnie is a lavender-colored rabbit who plays guitar. He is quite shy and prefers to stay in the shadows, but he can be a dangerous opponent when provoked.</p>
-        </div>
-        <div class="character">
-            <h3>Chica the Chicken</h3>
-            <p>Chica is a yellow chicken who loves to eat pizza. She is usually seen holding a cupcake and is known for her loud and playful demeanor.</p>
-        </div>
-        <div class="character">
-            <h3>Foxy the Pirate</h3>
-            <p>Foxy is a pirate fox who lives in Pirate Cove. He is known for his speed and agility, making him a formidable threat at night!</p>
+    <section class="fnaf-characters">
+        <h2>Meet the Characters</h2>
+        <div class="character-list">
+            <div class="character">
+                <img src="freddy.png" alt="Freddy Fazbear" class="fnaf-image">
+                <h3>Freddy Fazbear</h3>
+                <p>The iconic bear and lead singer of the animatronics.</p>
+            </div>
+            <div class="character">
+                <img src="bonnie.png" alt="Bonnie the Bunny" class="fnaf-image">
+                <h3>Bonnie the Bunny</h3>
+                <p>The guitarist of the band, known for his hopping gait.</p>
+            </div>
+            <div class="character">
+                <img src="chica.png" alt="Chica the Chicken" class="fnaf-image">
+                <h3>Chica the Chicken</h3>
+                <p>The singer who loves pizza and has a habit of stalking players.</p>
+            </div>
+            <div class="character">
+                <img src="foxy.png" alt="Foxy the Pirate" class="fnaf-image">
+                <h3>Foxy the Pirate</h3>
+                <p>The elusive animatronic who hides away in Pirate Cove.</p>
+            </div>
         </div>
     </section>
 
-    <h2>Listen to the FNaF Playlist!</h2>
-    <!-- Updated SoundCloud Embed -->
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1937752571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
-        <a href="https://soundcloud.com/ian-everhart-asher" title="Victor Ian" target="_blank" style="color: #cccccc; text-decoration: none;">Victor Ian</a> · 
-        <a href="https://soundcloud.com/ian-everhart-asher/fnaf-playlist-001" title="FNaF Playlist 001" target="_blank" style="color: #cccccc; text-decoration: none;">FNaF Playlist 001</a>
-    </div>
+    <section class="fnaf-locations">
+        <h2>FNaF Locations</h2>
+        <div class="location-list">
+            <div class="location">
+                <h3>Freddy Fazbear's Pizza</h3>
+                <p>The iconic pizzeria where the animatronics perform during the day and roam freely at night. Many mysterious events have taken place here, making it a central location in the FNaF universe.</p>
+            </div>
+            <div class="location">
+                <h3>Sister Location</h3>
+                <p>The underground facility where advanced animatronics like Baby and Funtime Foxy reside. It's known for its dangerous secrets and advanced technology.</p>
+            </div>
+            <div class="location">
+                <h3>Fazbear's Fright</h3>
+                <p>A horror attraction built to capitalize on the eerie history of Freddy Fazbear's Pizza. It burns down at the end of FNaF 3, but the mysteries remain.</p>
+            </div>
+            <div class="location">
+                <h3>Fredbear's Family Diner</h3>
+                <p>The original location that started it all. This diner is infamous for the bite incident that changed everything.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fnaf-animatronic-details">
+        <h2>Animatronic Mechanics</h2>
+        <p>Each animatronic has unique mechanics that change the way players must interact with them. Understanding their behavior is key to survival:</p>
+        <ul>
+            <li><strong>Freddy:</strong> Moves between the camera and the player's location, becoming more aggressive if the player fails to monitor him.</li>
+            <li><strong>Bonnie:</strong> Primarily comes from the left side and can enter the room quickly if the player is not careful.</li>
+            <li><strong>Chica:</strong> Approaches from the right and can be deterred by flashing the light.</li>
+            <li><strong>Foxy:</strong> Stays in Pirate Cove until the player fails to check on him frequently, at which point he will sprint towards the player.</li>
+        </ul>
+    </section>
+
+    <section class="fnaf-soundtrack">
+        <h2>FNaF Soundtrack</h2>
+        <p>Listen to the eerie sounds of the FNaF universe:</p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1937752571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ian-everhart-asher" title="Victor Ian" target="_blank" style="color: #cccccc; text-decoration: none;">Victor Ian</a> · 
+            <a href="https://soundcloud.com/ian-everhart-asher/fnaf-playlist-001" title="FNaF Playlist 001" target="_blank" style="color: #cccccc; text-decoration: none;">FNaF Playlist 001</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 FNaF Fan Page. All rights reserved.</p>
+        <p>&copy; 2024 Victor Ian V. Townsend. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
