@@ -1,210 +1,77 @@
-/* FNaF Page Stylesheet */
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* FNaF CSS Styles */
 body {
     background: url('fnaf_office_bg.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Press Start 2P', sans-serif; /* FNaF styled font */
-    color: #ffffff; /* White text color */
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
     text-align: center;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
 }
 
 h1 {
     font-size: 3em;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Dark shadow for depth */
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
-}
-
-h3 {
-    font-size: 1.5em;
-    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.8); /* Red shadow for titles */
-    margin: 15px 0;
+    text-shadow: 2px 2px 10px #000000;
 }
 
 nav {
-    margin-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 5px;
 }
 
 nav a {
     margin: 0 15px;
     font-weight: bold;
     text-decoration: none;
-    color: #f39c12; /* Gold color for links */
-    transition: color 0.3s ease;
+    color: #ff5500;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #e74c3c; /* Red hover effect */
+    color: #f39c12;
 }
 
-.fnaf-characters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
+.fnaf-characters, .fnaf-locations, .fnaf-animatronic-details, .fnaf-soundtrack {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 800px;
 }
 
 .fnaf-image {
-    margin: 10px;
-    max-width: 200px; /* Control image size */
+    width: 150px; /* Adjusted size for better display */
     height: auto; /* Maintain aspect ratio */
-    border: 5px solid #000; /* Black border around images */
-    border-radius: 10px; /* Rounded corners */
-    transition: transform 0.2s ease; /* Animation on hover */
+    margin: 10px;
 }
 
-.fnaf-image:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+.character-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.character-descriptions {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background for descriptions */
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
+.location-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.character {
+.location {
     margin: 10px 0;
+    max-width: 600px;
 }
 
 footer {
-    margin-top: 30px;
-    font-size: 0.8em;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-footer p {
-    color: #cccccc; /* Light gray color for footer text */
-}
-
-/* SoundCloud Player Styling */
-iframe {
-    border: none; /* Remove default border */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    h3 {
-        font-size: 1.2em;
-    }
-    .fnaf-image {
-        max-width: 150px; /* Smaller images on mobile */
-    }
-}
-
-/* Extra Styles for FNaF Theme */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: relative;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for spooky effect */
-    z-index: -1; /* Behind all content */
-}
-
-/* Animations */
-@keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
-h1, h2 {
-    animation: flicker 1s infinite; /* Flickering title effect */
-}
-
-/* Add more styles to reach 1000 lines */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.card {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 15px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
-
-/* Example of additional styles for a more extensive design */
-.card img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.card h3 {
-    color: #ffcc00; /* Gold color for card headings */
-}
-
-.card p {
-    font-size: 0.9em;
-    color: #ffffff; /* White text for card descriptions */
-}
-
-.button {
-    background-color: #ff5733; /* Button color */
-    border: none;
-    color: white;
-    padding: 10px 20px;
+    width: 100%;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: background-color 0.3s;
 }
-
-.button:hover {
-    background-color: #c70039; /* Darker red on hover */
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #333; /* Dark track */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #555; /* Grey scrollbar */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #777; /* Lighter on hover */
-}
-
-/* Add more FNaF-themed elements as necessary */
