@@ -24,8 +24,9 @@ h1 {
 }
 
 .fnaf-image {
+    width: 150px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
     margin: 20px;
-    max-width: 300px;
 }
 
 .fnaf-characters {
