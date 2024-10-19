@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNaF Page</title>
+    <title>Five Night's at Freddy's</title> <!-- A general FNaF title -->
     <style>
         html, body {
             margin: 0;
@@ -14,7 +14,7 @@
         body {
             background: url('fnaf_office_bg.png') no-repeat center center fixed;
             background-size: cover;
-            font-family: 'Press Start 2P', sans-serif;
+            font-family: 'Press Start 2P', sans-serif; /* FNaF-style font */
             color: white;
             text-align: center;
             display: flex;
@@ -51,22 +51,32 @@
             color: #f39c12;
         }
 
+        p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px black;
+        }
+
         /* Embedding SoundCloud player */
         .soundcloud-player {
             margin-top: 20px;
             width: 100%;
             height: 450px;
         }
+
+        footer {
+            margin-top: 30px;
+            color: lightgray;
+        }
     </style>
 </head>
 <body>
 
-    <h1>FNaF Special Page</h1>
+    <h1>Welcome to the FNaF page!</h1> <!-- General title to match FNaF site -->
 
     <!-- Navigation links to other pages -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="shadow.html">Shadow Chronicles</a>
+        <a href="shadowchronicles.html">Shadow Chronicles</a>
         <a href="written.html">Notebook</a>
         <a href="about.html">About</a>
     </nav>
@@ -78,9 +88,9 @@
         <img src="foxy.png" alt="Foxy the Pirate" class="fnaf-image">
     </div>
 
-    <p>Explore the eerie world of FNaF, where Freddy Fazbear and his crew are waiting for you!</p>
+    <p>Dare to explore the world of Freddy Fazbear and the animatronics? Let’s see how long you survive...</p>
 
-    <!-- Embedding SoundCloud player for FNaF Playlist -->
+    <!-- SoundCloud Player for FNaF Playlist -->
     <div class="soundcloud-player">
         <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1937752571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
@@ -90,6 +100,10 @@
             <a href="https://soundcloud.com/ian-everhart-asher/fnaf-playlist-001" title="FNaF Playlist 001" target="_blank" style="color: #cccccc; text-decoration: none;">FNaF Playlist 001</a>
         </div>
     </div>
+
+    <footer>
+        <p>Freddy and friends await your return. Stay alert!</p>
+    </footer>
 
 </body>
 </html>
