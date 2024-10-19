@@ -5,13 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notebook - Victor's Universe</title>
     <link rel="stylesheet" href="written.css">
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background-color: #fdf6e3;
+            color: #333;
+        }
+        .notebook {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background: #f9f3dd;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Cursive', sans-serif;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e67e22;
+        }
+        #fallDown, #riseAgain {
+            margin-top: 20px;
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        /* Animation for rise */
+        .rise-animation {
+            animation: riseUp 1s ease forwards;
+        }
+        /* Animation for fall */
+        .fall-animation {
+            animation: fallDown 1s ease forwards;
+        }
+        @keyframes riseUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fallDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <div class="notebook">
         <h1>Notebook</h1>
 
-        <p>
-            <strong><span id="riseTitle" onclick="toggleFallDown()">Rise Again</span></strong><br>
+        <!-- Navigation links to other pages -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shadowchronicles.html">Shadow Chronicles</a>
+            <a href="written.html">Notebook</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- Display Rise Again first -->
+        <div id="riseAgain">
+            <strong>Rise Again</strong><br>
             Victor Ian V. Townsend<br>
             7 - Rizal<br><br>
             When the world feels dark and cold,<br>
@@ -37,10 +122,11 @@
             There are plenty of fish in the deep blue sea,<br>
             They could be better than she would ever be.<br>
             Never give up, stay very strong.<br>
-            You'll be better than ever, nothing will go wrong.
-        </p>
+            You'll be better than ever, nothing will go wrong.<br><br>
+        </div>
 
-        <p id="fallDown" style="display: none;">
+        <!-- Display Fall Down initially hidden -->
+        <div id="fallDown">
             <strong>Fall Down</strong><br>
             Victor Ian V. Townsend<br>
             7 - Rizal<br><br>
@@ -67,8 +153,11 @@
             There are few fish in the shallow shore,<br>
             They could be worse than she would ever score.<br>
             Always give in, stay very weak.<br>
-            You’ll be worse than ever, everything will go bleak.
-        </p>
+            You’ll be worse than ever, everything will go bleak.<br><br>
+        </div>
+
+        <!-- Toggle button for switching between Rise Again and Fall Down -->
+        <button id="toggleButton">Fall</button>
 
         <p>
             <strong>Drowning in Sadness</strong><br>
@@ -76,15 +165,7 @@
         </p>
     </div>
 
-    <script>
-        function toggleFallDown() {
-            var fallDown = document.getElementById('fallDown');
-            if (fallDown.style.display === 'none') {
-                fallDown.style.display = 'block';
-            } else {
-                fallDown.style.display = 'none';
-            }
-        }
-    </script>
+    <!-- Include external JS file -->
+    <script src="written.js"></script>
 </body>
 </html>
