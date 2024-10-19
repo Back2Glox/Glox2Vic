@@ -5,55 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FNaF Page</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
         body {
-            font-family: 'FNaF Game Font', monospace;
-            background-image: url('fnaf_office_bg.png');
+            background: url('fnaf_office_bg.png') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            font-family: 'Press Start 2P', sans-serif;
             color: white;
             text-align: center;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .music-player {
-            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         h1 {
-            font-size: 50px;
-            margin-top: 20px;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px black;
         }
 
-        iframe {
-            margin-top: 20px;
-        }
-
-        .fnaf-images img {
+        .fnaf-image {
+            margin: 20px;
             max-width: 300px;
-            margin: 10px;
+        }
+
+        .fnaf-characters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #f39c12;
+        }
+
+        /* Embedding SoundCloud player */
+        .soundcloud-player {
+            margin-top: 20px;
+            width: 100%;
+            height: 450px;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Welcome to the FNaF Page!</h1>
-        <p>Explore the world of Five Nights at Freddy's with a collection of images, music, and more.</p>
 
-        <div class="fnaf-images">
-            <img src="fnaf_chica.jpg" alt="Chica Image">
-            <img src="fnaf_freddy.jpg" alt="Freddy Image">
-            <img src="fnaf_bonnie.jpg" alt="Bonnie Image">
-        </div>
+    <h1>FNaF Special Page</h1>
 
-        <div class="music-player">
-            <h2>Listen to the FNaF Playlist:</h2>
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
-                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/victor-ian-707073919/fnaf-playlist-001"></iframe>
+    <!-- Navigation links to other pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shadow.html">Shadow Chronicles</a>
+        <a href="written.html">Notebook</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="fnaf-characters">
+        <img src="freddy.png" alt="Freddy Fazbear" class="fnaf-image">
+        <img src="bonnie.png" alt="Bonnie the Bunny" class="fnaf-image">
+        <img src="chica.png" alt="Chica the Chicken" class="fnaf-image">
+        <img src="foxy.png" alt="Foxy the Pirate" class="fnaf-image">
+    </div>
+
+    <p>Explore the eerie world of FNaF, where Freddy Fazbear and his crew are waiting for you!</p>
+
+    <!-- Embedding SoundCloud player for FNaF Playlist -->
+    <div class="soundcloud-player">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1937752571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+        <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ian-everhart-asher" title="Victor Ian" target="_blank" style="color: #cccccc; text-decoration: none;">Victor Ian</a> · 
+            <a href="https://soundcloud.com/ian-everhart-asher/fnaf-playlist-001" title="FNaF Playlist 001" target="_blank" style="color: #cccccc; text-decoration: none;">FNaF Playlist 001</a>
         </div>
     </div>
+
 </body>
 </html>
