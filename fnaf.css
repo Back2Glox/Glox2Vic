@@ -1,53 +1,41 @@
-/* FNaF CSS Styles */
+/* General Styling */
 body {
-    background: url('fnaf_office_bg.png') no-repeat center center fixed;
+    background-image: url('fnaf-background.jpg');
     background-size: cover;
-    font-family: 'Press Start 2P', cursive;
-    color: #ffffff;
-    text-align: center;
+    background-attachment: fixed; /* Keeps the background fixed */
+    background-position: center;
     margin: 0;
-    padding: 0;
+    font-family: 'Consolas', 'Courier New', monospace; /* FNaF-styled font */
+    color: #fff;
 }
 
+/* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
     padding: 20px;
 }
 
 h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 5px #000;
+    color: #ff0000;
+}
+
+p.intro {
+    font-size: 1.5em;
+    color: #f1c40f;
+}
+
+/* Animatronics Section */
+.fnaf-characters {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.fnaf-characters h2 {
     font-size: 3em;
-    text-shadow: 2px 2px 10px #000000;
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-nav a {
-    margin: 0 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ff5500;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f39c12;
-}
-
-.fnaf-characters, .fnaf-locations, .fnaf-animatronic-details, .fnaf-soundtrack {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    max-width: 800px;
-}
-
-.fnaf-image {
-    width: 150px; /* Adjusted size for better display */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .character-list {
@@ -56,22 +44,356 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+.character {
+    width: 220px;
+    margin: 20px;
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.character p {
+    font-size: 1.4em;
+    color: #ff5500;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px #000;
+}
+
+/* Locations Section */
+.fnaf-locations {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fnaf-locations h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
 .location-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .location {
-    margin: 10px 0;
-    max-width: 600px;
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
+.location h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.location p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Fan Theories Section */
+.fan-theories {
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.fan-theories h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.theory-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.theory {
+    width: 30%;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.theory h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.theory p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Music Section */
+.fnaf-music {
+    padding: 40px 20px;
+    background-color: #111;
     text-align: center;
 }
+
+.fnaf-music h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 1.2em;
+    border-top: 3px solid #fff;
+}
+
+footer p {
+    color: #ff5500;
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* General Text Shadow */
+h1, h2, h3, p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff5500;
+    border-radius: 20px;
+    border: 3px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .location, .theory {
+        width: 45%;
+    }
+    .character {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .location, .theory {
+        width: 100%;
+    }
+    .character {
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .fnaf-locations, .fan-theories, .fnaf-music {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* Character Animation */
+.character img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.character img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Button Styling */
+button {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.2em;
+    background-color: #ff5500;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #e74c3c;
+    border-color: #f1c40f;
+}
+
+/* Menu Bar */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px #000;
+    border-bottom: 3px solid #ff5500;
+}
+
+.menu a {
+    color: #f39c12;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff5500;
+}
+
+/* Background Effects */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('fnaf-overlay.png') repeat;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+/* Parallax Effect for Background */
+body {
+    perspective: 1px;
+    overflow-x: hidden;
+}
+
+.parallax-background {
+    background-image: url('fnaf-background2.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+
+/* Enhanced Character Info Hover */
+.character p {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    color: #f1c40f;
+    font-size: 1.4em;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.character:hover p {
+    opacity: 1;
+}
+
+/* Fancy Box Shadows for Sections */
+.fnaf-characters, .fnaf-locations, .fan-theories, .fnaf-music {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(255, 85, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid #ff5500;
+}
+
+/* Music Section Styling */
+.fnaf-music {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 40%, rgba(255, 85, 0, 0.8));
+    padding: 40px 20px;
+    color: #f1c40f;
+}
+
+iframe {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(255, 85, 0, 0.8);
+}
+
+.fnaf-music p {
+    font-size: 1.2em;
+    color: #f1c40f;
+}
+
+/* Music Embed Styling */
+iframe {
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .character-list, .location-list, .theory-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character, .location, .theory {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+/* Advanced Text Effects */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+    }
+    20% {
+        text-shadow: -2px 0 red, 2px 0 blue;
+    }
+    40% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+    }
+    60% {
+        text-shadow: -2px 0 red, 2px 0 blue;
+    }
+    80% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+    }
+    100% {
+        text-shadow: -2px 0 red, 2px 0 blue;
+    }
+}
+
+h1 {
+    animation: glitch 1s infinite;
+    }
