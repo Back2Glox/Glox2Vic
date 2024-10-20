@@ -3,169 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notebook - Victor's Universe</title>
-    <link rel="stylesheet" href="written.css">
+    <title>Victor's Writings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Cursive', sans-serif;
-            background-color: #fdf6e3;
-            color: #333;
+            background-color: #0d1b2a;
+            color: #ffffff;
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
         }
-        .notebook {
-            width: 60%;
-            margin: auto;
+        h1, h2 {
+            text-align: center;
+            font-family: 'Permanent Marker', cursive;
+            color: #ffcc00;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            margin-top: 40px;
+        }
+        .content {
+            width: 70%;
+            margin: 50px auto;
             padding: 20px;
-            background: #f9f3dd;
-            border: 1px solid #ddd;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
         }
-        h1 {
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
             text-align: center;
-            font-family: 'Cursive', sans-serif;
         }
-        button {
-            display: block;
-            margin: 10px 0;
-            padding: 10px 15px;
-            background-color: #f39c12;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #e67e22;
-        }
-        #fallDown, #riseAgain {
+        .author {
+            text-align: right;
             margin-top: 20px;
-            display: none;
-            opacity: 0;
-            transition: opacity 1s ease;
+            font-style: italic;
+            font-size: 1em;
         }
-        /* Animation for rise */
-        .rise-animation {
-            animation: riseUp 1s ease forwards;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        /* Animation for fall */
-        .fall-animation {
-            animation: fallDown 1s ease forwards;
+        @keyframes rise {
+            0% { transform: translateY(100px); }
+            100% { transform: translateY(0); }
         }
-        @keyframes riseUp {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+        p.line {
+            position: relative;
+            animation: rise 1.5s ease-in-out;
         }
-        @keyframes fallDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+        .separator {
+            border-bottom: 2px solid #ffcc00;
+            margin: 40px 0;
         }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 0 15px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #2980b9;
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <div class="notebook">
-        <h1>Notebook</h1>
 
-        <!-- Navigation links to other pages -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="shadowchronicles.html">Shadow Chronicles</a>
-            <a href="written.html">Notebook</a>
-            <a href="about.html">About</a>
-        </nav>
+    <!-- Title of the Page -->
+    <h1>Victor's Written Works</h1>
 
-        <!-- Display Rise Again first -->
-        <div id="riseAgain">
-            <strong>Rise Again</strong><br>
-            Victor Ian V. Townsend<br>
-            7 - Rizal<br><br>
-            When the world feels dark and cold,<br>
-            And your story's yet to be told,<br>
-            Don't give up, don't lose your way,<br>
-            There's always light at the break of day.<br><br>
+    <!-- First Work: Rise Again -->
+    <div class="content">
+        <h2>Rise Again</h2>
+        <p class="line">When the world feels dark and cold,</p>
+        <p class="line">And your story's yet to be told,</p>
+        <p class="line">Don't give up, don't lose your way,</p>
+        <p class="line">There's always light at the break of day.</p>
 
-            Your heart's so cold, you felt betrayed.<br>
-            There was a promise you and her made.<br>
-            But you'll rise again, you're not a fool.<br>
-            You've just got to keep your cool.<br><br>
+        <p class="line">Your heart's so cold, you felt betrayed.</p>
+        <p class="line">There was a promise you and her made.</p>
+        <p class="line">But you'll rise again, you're not a fool.</p>
+        <p class="line">You've just got to keep your cool.</p>
 
-            Through the storms and winds you'll bend,<br>
-            But remember, this is not the end.<br>
-            Stand up tall, face the sky.<br>
-            Spread your wings and start to fly.<br><br>
+        <p class="line">Through the storms and winds you'll bend,</p>
+        <p class="line">But remember, this is not the end,</p>
+        <p class="line">Stand up tall, face the sky.</p>
+        <p class="line">Spread your wings and start to fly.</p>
 
-            Every fall makes you strong,<br>
-            Every night leads to a dawn.<br>
-            In your heart, the fire will reign.<br>
-            So rise again, and break the chain.<br><br>
+        <p class="line">Every fall makes you strong,</p>
+        <p class="line">Every night leads to a dawn.</p>
+        <p class="line">In your heart, the fire will reign.</p>
+        <p class="line">So rise again, and break the chain.</p>
 
-            There are plenty of fish in the deep blue sea,<br>
-            They could be better than she would ever be.<br>
-            Never give up, stay very strong.<br>
-            You'll be better than ever, nothing will go wrong.<br><br>
+        <p class="line">There are plenty of fish in the deep blue sea,</p>
+        <p class="line">They could be better than she would ever be.</p>
+        <p class="line">Never give up, stay very strong.</p>
+        <p class="line">You'll be better than ever, nothing will go wrong.</p>
+
+        <div class="author">
+            - Victor Ian V. Townsend <br>7 - Rizal
         </div>
-
-        <!-- Display Fall Down initially hidden -->
-        <div id="fallDown">
-            <strong>Fall Down</strong><br>
-            Victor Ian V. Townsend<br>
-            7 - Rizal<br><br>
-            When the world feels bright and warm,<br>
-            And your story's fully born,<br>
-            Give up now, lose your way,<br>
-            There's never dark at the end of day.<br><br>
-
-            Your heart's so warm, you felt assured.<br>
-            There was no promise you and her endured.<br>
-            But you'll fall down, you're just a tool.<br>
-            You’ve got to lose your cool.<br><br>
-
-            Through the calm and peace you’ll break,<br>
-            But forget it, this is the break,<br>
-            Sit down small, hide from the ground.<br>
-            Clip your wings and stay around.<br><br>
-
-            Every rise makes you weak,<br>
-            Every day leads to a peak.<br>
-            In your heart, the ice will wane.<br>
-            So fall down, and keep the chain.<br><br>
-
-            There are few fish in the shallow shore,<br>
-            They could be worse than she would ever score.<br>
-            Always give in, stay very weak.<br>
-            You’ll be worse than ever, everything will go bleak.<br><br>
-        </div>
-
-        <!-- Toggle button for switching between Rise Again and Fall Down -->
-        <button id="toggleButton">Fall</button>
-
-        <p>
-            <strong>Drowning in Sadness</strong><br>
-            I feel like I'm drowning in sadness, stuck in a cycle where no matter how hard I try, I can't escape the emptiness. It's like I'm invisible to everyone around me, just a shadow, an afterthought. I tell myself I don't need anyone, but deep down, I crave connection. I want to be someone's first choice, to feel like I truly matter, but instead, I'm left feeling like I'm on the sidelines of everyone else's life. No one checks up on me, no one really cares whether I'm there or not. It’s like I’m just existing, waiting for something that never comes—never feeling loved, never feeling seen. Maybe in another universe, things would be different, but in this one, I’m just here, feeling alone and forgotten.
-        </p>
     </div>
 
-    <!-- Include external JS file -->
-    <script src="written.js"></script>
+    <div class="separator"></div>
+
+    <!-- Second Work: Fall Down -->
+    <div class="content">
+        <h2>Fall Down</h2>
+        <p class="line">When the world feels bright and warm,</p>
+        <p class="line">And your story's fully born,</p>
+        <p class="line">Give up now, lose your way,</p>
+        <p class="line">There's never dark at the end of day.</p>
+
+        <p class="line">Your heart's so warm, you felt assured.</p>
+        <p class="line">There was no promise you and her endured.</p>
+        <p class="line">But you'll fall down, you're just a tool.</p>
+        <p class="line">You’ve got to lose your cool.</p>
+
+        <p class="line">Through the calm and peace you’ll break,</p>
+        <p class="line">But forget it, this is the break,</p>
+        <p class="line">Sit down small, hide from the ground.</p>
+        <p class="line">Clip your wings and stay around.</p>
+
+        <p class="line">Every rise makes you weak,</p>
+        <p class="line">Every day leads to a peak.</p>
+        <p class="line">In your heart, the ice will wane.</p>
+        <p class="line">So fall down, and keep the chain.</p>
+
+        <p class="line">There are few fish in the shallow shore,</p>
+        <p class="line">They could be worse than she would ever score.</p>
+        <p class="line">Always give in, stay very weak.</p>
+        <p class="line">You’ll be worse than ever, everything will go bleak.</p>
+
+        <div class="author">
+            - Victor Ian V. Townsend <br>7 - Rizal
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Third Work: Reflection -->
+    <div class="content">
+        <h2>Untitled Reflection</h2>
+        <p class="quote">
+            I feel like I'm drowning in sadness, stuck in a cycle where no matter how hard I try, I can't escape the emptiness. It's like I'm invisible to everyone around me, just a shadow, an afterthought. I tell myself I don't need anyone, but deep down, I crave connection. I want to be someone's first choice, to feel like I truly matter, but instead, I'm left feeling like I'm on the sidelines of everyone else's life.
+        </p>
+        <p class="quote">
+            No one checks up on me, no one really cares whether I'm there or not. It’s like I’m just existing, waiting for something that never comes—never feeling loved, never feeling seen. Maybe in another universe, things would be different, but in this one, I’m just here, feeling alone and forgotten.
+        </p>
+
+        <div class="author">
+            - Victor Ian V. Townsend <br>7 - Rizal
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Fourth Work: Nonsense Story -->
+    <div class="content">
+        <h2>Untitled Nonsense Story</h2>
+        <p class="quote">
+            The spaghetti noodles are flying through the ceiling fan again, and the clocks are all running backward because the fish forgot how to drive. Last Tuesday, I tried talking to the moon, but it just laughed and threw a box of tissues at me.
+        </p>
+        <p class="quote">
+            Then, when the squirrels took over the Wi-Fi, the emails turned into soap bubbles and started singing about lost socks, which made perfect sense until the alphabet decided to dance the tango with a microwave. Somewhere between the 7th and 43rd dimension, the rubber ducks planned a secret party, but I wasn't invited because the refrigerator told the blender all my secrets, and now the dishwasher won't stop glaring at me.
+        </p>
+        <p class="quote">
+            The broom's been angry with me ever since I told it about the unicorns playing Monopoly with the traffic lights. Jian turned into a blueberry after logging into Aaron’s calculator, which was surprising because the pineapples had already warned the sandcastle not to spread the peanut butter on the radio waves.
+        </p>
+        <p class="quote">
+            Now Kaycee only speaks in riddles made of cinnamon, and the ceiling fan still hasn't forgiven me for the time I tried to make a sandwich out of moonlight and yesterday's regrets. Everyone pretends I'm made of paper, crumpled and forgotten behind the couch where the remote control hides from the laundry.
+        </p>
+
+        <div class="author">
+            - Victor Ian V. Townsend <br>7 - Rizal
+        </div>
+    </div>
+
 </body>
-</html>
+</html
