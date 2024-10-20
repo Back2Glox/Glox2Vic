@@ -3,94 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNaF Page</title>
-    <link rel="stylesheet" href="fnaf.css">
+    <title>Five Nights at Freddy's Fan Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Pixelated font -->
 </head>
 <body>
     <header>
-        <h1>Welcome to the FNaF page!</h1>
-        <p class="intro">This page is dedicated to all things Five Nights at Freddy's. From animatronic characters to fan theories and locations, immerse yourself in the eerie world of FNaF!</p>
+        <h1>Five Nights at Freddy's Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#fanart">Fan Art</a></li>
+                <li><a href="#soundcloud">SoundCloud</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <!-- Character Section -->
-        <section class="fnaf-characters">
-            <h2>Meet the Animatronics</h2>
-            <div class="character-list">
-                <div class="character">
-                    <img src="freddy.png" alt="Freddy Fazbear">
-                    <p>Freddy Fazbear</p>
-                </div>
-                <div class="character">
-                    <img src="bonnie.png" alt="Bonnie the Bunny">
-                    <p>Bonnie the Bunny</p>
-                </div>
-                <div class="character">
-                    <img src="chica.png" alt="Chica the Chicken">
-                    <p>Chica the Chicken</p>
-                </div>
-                <div class="character">
-                    <img src="foxy.png" alt="Foxy the Pirate Fox">
-                    <p>Foxy the Pirate Fox</p>
-                </div>
-            </div>
-        </section>
+    <section id="characters" class="container">
+        <h2>Characters</h2>
+        <div class="character">
+            <img src="freddy.png" alt="Freddy Fazbear">
+            <p class="character-title">Freddy Fazbear</p>
+            <p class="character-description">The main antagonist of the series. Watch out for him!</p>
+        </div>
+        <div class="character">
+            <img src="bonnie.png" alt="Bonnie the Bunny">
+            <p class="character-title">Bonnie</p>
+            <p class="character-description">The guitarist of the group. Always on the move!</p>
+        </div>
+        <div class="character">
+            <img src="chica.png" alt="Chica the Chicken">
+            <p class="character-title">Chica</p>
+            <p class="character-description">Loves pizza and always hungry for more!</p>
+        </div>
+        <div class="character">
+            <img src="foxy.png" alt="Foxy the Pirate Fox">
+            <p class="character-title">Foxy</p>
+            <p class="character-description">The pirate fox with a speed like no other!</p>
+        </div>
+    </section>
 
-        <!-- Game Locations Section -->
-        <section class="fnaf-locations">
-            <h2>FNaF Locations</h2>
-            <div class="location-list">
-                <div class="location">
-                    <h3>Freddy Fazbear's Pizza</h3>
-                    <p>The infamous pizzeria where children vanish and animatronics come to life. Do you dare to work the night shift?</p>
-                </div>
-                <div class="location">
-                    <h3>Circus Baby's Entertainment and Rental</h3>
-                    <p>A facility where animatronics are stored and rented out for parties. But something far more sinister lurks within.</p>
-                </div>
-                <div class="location">
-                    <h3>Fazbear's Fright</h3>
-                    <p>A horror attraction based on the tragedies of the past. Beware of Springtrap, who lurks in the shadows.</p>
-                </div>
-            </div>
-        </section>
+    <section id="games">
+        <h2>Games</h2>
+        <p>Check out the FNaF games:</p>
+        <ul>
+            <li><a href="https://fivenightsatfreddys.com/" target="_blank">Official FNaF Website</a></li>
+            <li><a href="https://store.steampowered.com/app/388090/Five_Nights_at_Freddys/" target="_blank">Steam Page</a></li>
+            <li><a href="https://www.freddys.com/" target="_blank">Freddy Fazbear's Pizza</a></li>
+        </ul>
+    </section>
 
-        <!-- Fan Theories Section -->
-        <section class="fan-theories">
-            <h2>FNaF Fan Theories</h2>
-            <div class="theory-list">
-                <div class="theory">
-                    <h3>The Bite of '87</h3>
-                    <p>What really happened during the Bite of '87? Many believe Foxy or Mangle was involved, but could it have been another animatronic?</p>
-                </div>
-                <div class="theory">
-                    <h3>Who is the Purple Guy?</h3>
-                    <p>The identity of the notorious "Purple Guy" has been debated for years. Is he William Afton or someone else entirely?</p>
-                </div>
-                <div class="theory">
-                    <h3>The Puppet's Revenge</h3>
-                    <p>Is the Puppet seeking revenge for the children’s murders? Some believe that it’s the mastermind behind all the haunting events.</p>
-                </div>
-            </div>
-        </section>
+    <section id="fanart">
+        <h2>Fan Art</h2>
+        <p>Here are some amazing fan arts:</p>
+        <div class="gallery">
+            <img src="fanart1.jpg" alt="Fan Art 1">
+            <img src="fanart2.jpg" alt="Fan Art 2">
+            <img src="fanart3.jpg" alt="Fan Art 3">
+        </div>
+    </section>
 
-        <!-- Music Section -->
-        <section class="fnaf-music">
-            <h2>FNaF Soundtrack</h2>
-            <p>Enjoy the eerie and suspenseful soundtrack that plays throughout the FNaF series.</p>
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1937752571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ian-everhart-asher" title="Victor Ian" target="_blank" style="color: #cccccc; text-decoration: none;">Victor Ian</a> · 
-                <a href="https://soundcloud.com/ian-everhart-asher/fnaf-playlist-001" title="FNaF Playlist 001" target="_blank" style="color: #cccccc; text-decoration: none;">FNaF Playlist 001</a>
-            </div>
-        </section>
-    </main>
-<input type="text" id="code-input" placeholder="Enter the code" />
-<button id="submit-code">Submit Code</button>
+    <section id="soundcloud">
+        <h2>SoundCloud</h2>
+        <p>Listen to my favorite FNaF tracks:</p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1937752571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
+            <a href="https://soundcloud.com/ian-everhart-asher" title="Victor Ian" target="_blank" style="color: #cccccc; text-decoration: none;">Victor Ian</a> · 
+            <a href="https://soundcloud.com/ian-everhart-asher/fnaf-playlist-001" title="FNaF Playlist 001" target="_blank" style="color: #cccccc; text-decoration: none;">FNaF Playlist 001</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>I am a fan of Five Nights at Freddy's, dedicated to sharing the love for the series.</p>
+        <p>Contact me at: <a href="mailto:fnafcommunity@example.com">fnafcommunity@example.com</a></p>
+    </section>
+
+    <button id="flashToggle">Toggle Flashing Lights</button>
+
     <footer>
-        <p>&copy; 2024 FNaF Fan Page. All Rights Reserved.</p>
+        <p>&copy; 2024 FNaF Fan Page - All Rights Reserved</p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/FNaFfanpage" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com/FNaFfanpage" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/FNaFfanpage" target="_blank">Instagram</a></li>
+        </ul>
     </footer>
-    <script src="fnaf.js"></script>
+
+    <script>
+        // Flashing light button functionality
+        document.getElementById('flashToggle').addEventListener('click', function() {
+            document.body.classList.toggle('flash');
+        });
+    </script>
 </body>
 </html>
