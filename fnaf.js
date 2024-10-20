@@ -1,46 +1,31 @@
-// JavaScript for FNaF Page
+// Flashing Light Functionality
+const flashButton = document.getElementById('flashToggle');
+const body = document.body;
 
-// Show jump scare image when button is clicked
-document.getElementById("jump-scare-button").addEventListener("click", function() {
-    const jumpScareContainer = document.getElementById("jump-scare-container");
-    jumpScareContainer.style.display = "block";
-    document.body.style.overflow = "hidden"; // Prevent scrolling
+let isFlashing = false;
 
-    // Hide jump scare after 3 seconds
-    setTimeout(() => {
-        jumpScareContainer.style.display = "none";
-        document.body.style.overflow = "auto"; // Re-enable scrolling
-    }, 3000);
+flashButton.addEventListener('click', () => {
+    isFlashing = !isFlashing;
+    if (isFlashing) {
+        body.classList.add('flashing');
+        flashButton.textContent = 'Stop Flashing';
+    } else {
+        body.classList.remove('flashing');
+        flashButton.textContent = 'Start Flashing';
+    }
 });
 
-// Easter egg button for fun
-document.getElementById("easter-egg-button").addEventListener("click", function() {
-    const easterEggMessage = document.createElement("div");
-    easterEggMessage.textContent = "You've found an Easter Egg! 🎉";
-    easterEggMessage.style.position = "fixed";
-    easterEggMessage.style.top = "50%";
-    easterEggMessage.style.left = "50%";
-    easterEggMessage.style.transform = "translate(-50%, -50%)";
-    easterEggMessage.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
-    easterEggMessage.style.color = "black";
-    easterEggMessage.style.padding = "20px";
-    easterEggMessage.style.border = "2px solid #f39c12";
-    easterEggMessage.style.borderRadius = "10px";
-    easterEggMessage.style.zIndex = "2000";
-    document.body.appendChild(easterEggMessage);
+// CSS class for flashing effect
+const style = document.createElement('style');
+style.textContent = `
+    .flashing {
+        animation: flash 0.5s infinite;
+    }
 
-    // Remove the message after 3 seconds
-    setTimeout(() => {
-        document.body.removeChild(easterEggMessage);
-    }, 3000);
-});
-
-// Easter egg sound effect
-const easterEggSound = new Audio('sounds/easter_egg_sound.mp3'); // Add your sound file here
-easterEggButton.addEventListener("click", () => {
-    easterEggSound.play();
-});
-
-// Handle jump scare image
-const jumpScareImage = document.getElementById("jump-scare-image");
-jumpScareImage.src = "jumpscare.png"; // Set your jump scare image here
+    @keyframes flash {
+        0% { background-color: rgba(0, 0, 0, 0.9); }
+        50% { background-color: rgba(255, 0, 0, 0.9); }
+        100% { background-color: rgba(0, 0, 0, 0.9); }
+    }
+`;
+document.head.appendChild(style);
